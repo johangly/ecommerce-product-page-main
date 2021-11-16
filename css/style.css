@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/* line 2, ../sass/_nav.scss */
+body .container { background-color: white; margin: 0 200px; }
+/* line 5, ../sass/_nav.scss */
+body .container .nav-bar { border-bottom: 1px solid rgba(216, 216, 216, 0.521); width: 100%; height: 110px; display: grid; grid-template-columns: 1fr 3fr 1fr; }
+/* line 11, ../sass/_nav.scss */
+body .container .nav-bar div { display: flex; align-items: center; }
+/* line 16, ../sass/_nav.scss */
+body .container .nav-bar .nav-3 { justify-content: flex-end; }
+/* line 18, ../sass/_nav.scss */
+body .container .nav-bar .nav-3 .img-1 { width: 23px; height: 23px; margin-right: 40px; position: relative; overflow: hidden; display: block; filter: brightness(1); }
+/* line 26, ../sass/_nav.scss */
+body .container .nav-bar .nav-3 .img-1:hover { filter: brightness(0.3); }
+/* line 30, ../sass/_nav.scss */
+body .container .nav-bar .nav-3 .img-2 { border: 0px solid #b6bcc8; border-radius: 50%; width: 52px; height: 52px; }
+/* line 35, ../sass/_nav.scss */
+body .container .nav-bar .nav-3 .img-2:hover { outline: 2.5px solid #ff7d1a; }
+/* line 40, ../sass/_nav.scss */
+body .container .nav-bar .nav-2 { text-align: center; }
+/* line 42, ../sass/_nav.scss */
+body .container .nav-bar .nav-2 a { font-weight: 400; display: flex; align-items: center; text-decoration: none; color: #68707d; margin-right: 20px; height: 100%; position: relative; }
+/* line 51, ../sass/_nav.scss */
+body .container .nav-bar .nav-2 a::after { content: ''; width: 100%; height: 0px; bottom: 0; left: 0; background-color: #ff7d1a; position: absolute; transition: 100ms all ease; }
+/* line 61, ../sass/_nav.scss */
+body .container .nav-bar .nav-2 a:hover::after { height: 4px; }
+/* line 64, ../sass/_nav.scss */
+body .container .nav-bar .nav-2 a:hover { color: #1d2025; }
+
+/* line 7, ../sass/_main.scss */
+body .container .main { padding-top: 70px; padding-bottom: 70px; display: grid; gap: 35px; grid-template-columns: 1fr 1fr; }
+/* line 13, ../sass/_main.scss */
+body .container .main .main-left { width: 100%; margin: 0 35px; }
+/* line 16, ../sass/_main.scss */
+body .container .main .main-left .img-container { display: flex; justify-content: center; align-items: center; flex-direction: column; }
+/* line 22, ../sass/_main.scss */
+body .container .main .main-left .img-container .principal-img { width: 390px; border-radius: 15px; }
+/* line 26, ../sass/_main.scss */
+body .container .main .main-left .img-container .img-thumnails { margin: 20px 0; display: flex; align-items: center; width: 390px; justify-content: space-between; }
+/* line 32, ../sass/_main.scss */
+body .container .main .main-left .img-container .img-thumnails img { border-radius: 10px; width: 80px; overflow: hidden; position: relative; }
+/* line 37, ../sass/_main.scss */
+body .container .main .main-left .img-container .img-thumnails img:hover { filter: opacity(55%); }
+/* line 40, ../sass/_main.scss */
+body .container .main .main-left .img-container .img-thumnails img:focus { outline: 3px solid #ff7d1a; }
+/* line 47, ../sass/_main.scss */
+body .container .main .main-right { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; margin: 0 35px; }
+/* line 53, ../sass/_main.scss */
+body .container .main .main-right .sneakerCompany { font-size: 11px; color: #ff7d1a; font-weight: 700; letter-spacing: 2px; }
+/* line 59, ../sass/_main.scss */
+body .container .main .main-right h1 { font-size: 2.1em; color: #1d2025; }
+/* line 63, ../sass/_main.scss */
+body .container .main .main-right p { line-height: 1.6em; color: #68707d; margin-bottom: 20px; }
+/* line 68, ../sass/_main.scss */
+body .container .main .main-right .price { display: flex; justify-content: center; align-items: center; margin-bottom: 12px; }
+/* line 73, ../sass/_main.scss */
+body .container .main .main-right .price strong { font-size: 1.7em; margin-right: 15px; }
+/* line 77, ../sass/_main.scss */
+body .container .main .main-right .price span { text-align: center; padding: 2px 8px; font-size: .8em; font-weight: 700; color: #ff7d1a; background-color: #ffede0; border-radius: 4px; }
+/* line 87, ../sass/_main.scss */
+body .container .main .main-right del { color: #b6bcc8; font-size: 1em; margin-bottom: 20px; }
+/* line 92, ../sass/_main.scss */
+body .container .main .main-right .add-to-cart { margin-top: 15px; width: 100%; justify-content: start; align-items: center; display: flex; }
+/* line 98, ../sass/_main.scss */
+body .container .main .main-right .add-to-cart .addSubstract { padding: 3px 0; border-radius: 6px; background-color: #f7f8fd; margin-right: 15px; display: flex; align-items: center; justify-content: space-between; }
+/* line 106, ../sass/_main.scss */
+body .container .main .main-right .add-to-cart .addSubstract p { display: flex; align-items: center; justify-content: center; font-size: 1em; text-align: center; height: 100%; font-weight: 700; color: #1d2025; margin: 0px 5px; }
+/* line 117, ../sass/_main.scss */
+body .container .main .main-right .add-to-cart .addSubstract button { border-radius: 6px; display: flex; align-items: center; justify-content: center; padding: 14px 35px; background-color: #f7f8fd; border: none; position: relative; overflow: hidden; }
+/* line 127, ../sass/_main.scss */
+body .container .main .main-right .add-to-cart .addSubstract button .add { margin-right: -20px; }
+/* line 130, ../sass/_main.scss */
+body .container .main .main-right .add-to-cart .addSubstract button .substract { margin-left: -20px; }
+/* line 133, ../sass/_main.scss */
+body .container .main .main-right .add-to-cart .addSubstract button:hover img { filter: opacity(75%); }
+/* line 139, ../sass/_main.scss */
+body .container .main .main-right .add-to-cart .add-cart button { border-radius: 6px; background-color: #ff7d1a; display: flex; padding: 14px 66px; align-items: center; justify-content: center; border: none; flex-wrap: nowrap; color: white; position: relative; overflow: hidden; }
+/* line 151, ../sass/_main.scss */
+body .container .main .main-right .add-to-cart .add-cart button img { width: 16px; margin-right: 10px; }
+/* line 155, ../sass/_main.scss */
+body .container .main .main-right .add-to-cart .add-cart button:hover { filter: opacity(75%); }
+
+/* line 23, ../sass/style.scss */
+.attribution { font-size: 11px; text-align: center; }
+
+/* line 28, ../sass/style.scss */
+.attribution a { color: #3e52a3; }
+
+/* line 32, ../sass/style.scss */
+body { font-size: 16px; }
+
+/* line 36, ../sass/style.scss */
+p { font-size: 1em; }
+
+/* line 40, ../sass/style.scss */
+* { font-family: "Kumbh Sans", sans-serif; box-sizing: border-box; margin: 0; padding: 0; }
+
+/*# sourceMappingURL=style.css.map */

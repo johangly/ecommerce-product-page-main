@@ -1,0 +1,71 @@
+body {
+    .container {
+        background-color: $color-7;
+        margin: 0 200px;
+        .nav-bar {
+            border-bottom: 1px solid rgba(216, 216, 216, 0.521);
+            width: 100%;
+            height: 110px;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            div {
+                // justify-content: center;
+                display: flex;
+                align-items: center;
+            }
+            .nav-3 {
+                justify-content: flex-end;
+                .img-1 {
+                    width: 23px;
+                    height: 23px;
+                    margin-right: 40px;
+                    position: relative;
+                    overflow: hidden;
+                    display: block;
+                    filter: brightness(1);
+                    &:hover {
+                        filter: brightness(.3);
+                    }
+                }
+                .img-2 {
+                    border: 0px solid $color-5;
+                    border-radius: 50%;
+                    width: 52px;
+                    height: 52px;
+                    &:hover {
+                        outline: 2.5px solid $color-1;
+                    }
+                }
+            }
+            .nav-2 {
+                text-align: center;
+                a {
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: $color-4;
+                    margin-right: 20px;
+                    height: 100%;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        width: 100%;
+                        height: 0px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: $color-1;
+                        position: absolute;
+                        transition: 100ms all ease;
+                    }
+                    &:hover::after {
+                        height: 4px;
+                    }
+                    &:hover {
+                        color: $color-3;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+//? variables
+//? Primary
+$color-1:hsl(26, 100%, 55%); //Orange
+$color-2:hsl(25, 100%, 94%); //Pale orange 
+//? Neutral
+$color-3:hsl(220, 13%, 13%); //Very dark blue
+$color-4:hsl(219, 9%, 45%); //Dark grayish blue
+$color-5:hsl(220, 14%, 75%); //Grayish blue
+$color-6:hsl(223, 64%, 98%); //Light grayish blue
+$color-7:hsl(0, 0%, 100%); //White
+//! Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%)
+//? typography
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+$font-1:'Kumbh Sans',
+sans-serif;
+//* (paragraph): 16px 
+//* Family: Kumbh Sans
+//* Weights: 400, 700
+//? Pagina
+@import '_nav.scss';
+@import '_main.scss';
+//? CSS general
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-size: 16px;
+}
+
+p {
+    font-size: 1em;
+}
+
+* {
+    font-family: $font-1;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
