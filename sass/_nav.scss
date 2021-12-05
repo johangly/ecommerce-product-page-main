@@ -1,7 +1,6 @@
 body {
     .container {
         background-color: $color-7;
-        margin: 0 200px;
         .nav-bar {
             border-bottom: 1px solid rgba(216, 216, 216, 0.521);
             width: 100%;
@@ -13,25 +12,47 @@ body {
                 display: flex;
                 align-items: center;
             }
+            .nav-responsive {
+                display: none;
+            }
             .nav-3 {
                 justify-content: flex-end;
-                .img-1 {
-                    width: 23px;
-                    height: 23px;
-                    margin-right: 40px;
+                .cart-container {
+                    span {
+                        width: 20px;
+                        top: 2px;
+                        left: 15px;
+                        text-align: center;
+                        font-size: .5em;
+                        font-weight: 700;
+                        color: #fff;
+                        position: absolute;
+                        height: 12px;
+                        background-color: $color-1;
+                        border-radius: 10px;
+                        z-index: 10;
+                    }
                     position: relative;
-                    overflow: hidden;
-                    display: block;
-                    filter: brightness(1);
-                    &:hover {
-                        filter: brightness(.3);
+                    width:67px;
+                    .img-1 {
+                        width: 23px;
+                        height: 23px;
+                        padding: 5px;
+                        box-sizing: content-box;
+                        position: relative;
+                        overflow: hidden;
+                        display: block;
+                        filter: brightness(1);
+                        &:hover {
+                            filter: brightness(.3);
+                        }
                     }
                 }
                 .img-2 {
                     border: 0px solid $color-5;
                     border-radius: 50%;
-                    width: 52px;
-                    height: 52px;
+                    width: 43px;
+                    height: 43px;
                     &:hover {
                         outline: 2.5px solid $color-1;
                     }
